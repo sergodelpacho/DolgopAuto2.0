@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Корзина — DolgopAuto</title>
+  <link rel="stylesheet" href="style.css?v=1"/>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"></span>
+      <span class="brand__text">
+        <span class="brand__name">DolgopAuto</span>
+        <span class="brand__sub">Подбор автозапчастей по VIN</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Главная</a>
+      <a class="nav__link" href="catalog.html">Каталог</a>
+      <a class="nav__link" href="contacts.html">Контакты</a>
+      <a class="nav__cart active" href="cart.html">Корзина: <b data-cart-count>0</b></a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div data-cart></div>
+
+  <footer class="footer">
+    © DolgopAuto • Ежедневно 09:00–20:00 • 8 (977) 936-29-53
+  </footer>
+</main>
+
+<script src="products.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
