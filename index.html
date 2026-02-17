@@ -4,16 +4,88 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DolgopAuto</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.9)),
+  url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.container{
+  width:95%;
+  max-width:900px;
+  background:rgba(0,0,0,.55);
+  padding:30px;
+  border-radius:18px;
+  backdrop-filter:blur(10px);
+}
+
+h1{
+  font-size:34px;
+  margin-bottom:10px;
+}
+
+.subtitle{
+  opacity:.85;
+  margin-bottom:20px;
+}
+
+.buttons{
+  margin:20px 0;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:12px;
+  background:#22c55e;
+  color:white;
+  text-decoration:none;
+  margin:5px;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background:#16a34a;
+}
+
+.section{
+  margin-top:25px;
+  background:rgba(255,255,255,.06);
+  padding:18px;
+  border-radius:14px;
+}
+
+.footer{
+  margin-top:25px;
+  text-align:center;
+  opacity:.7;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
-<main class="container">
+<div class="container">
 
-<section class="hero">
 <h1>DolgopAuto</h1>
-<p>Автозапчасти под заказ и в наличии</p>
+<div class="subtitle">Автозапчасти под заказ и в наличии</div>
 
 <div class="buttons">
 <a class="btn" href="https://max.ru/u/f9LHodD0cOKj3dtP8OrowftL4OglmMfxSO4WeATngrdyDcu9j8BsUteLcBk" target="_blank">MAX</a>
@@ -21,59 +93,33 @@
 <a class="btn" href="tel:+79779362953">Позвонить</a>
 </div>
 
-<p class="meta">
-Ежедневно 09:00–20:00<br>
-8 (977) 936-29-53
-</p>
-</section>
+<div>Ежедневно 09:00–20:00</div>
+<div>8 (977) 936-29-53</div>
 
-<section class="grid">
-
-<div class="card">
+<div class="section">
 <h3>Каталог</h3>
-<p>ТО, масла, подвеска, электрика и аксессуары</p>
-<a class="btn" href="каталог.html">Перейти в каталог</a>
+ТО, масла, подвеска, электрика и аксессуары
 </div>
 
-<div class="card">
+<div class="section">
 <h3>Как заказать</h3>
-<ol>
-<li>Напишите VIN / параметры</li>
-<li>Получите варианты</li>
-<li>Оформим заказ</li>
-</ol>
-<a class="btn ghost" href="контакты.html">Оставить заявку</a>
+1. Напишите VIN / параметры<br>
+2. Получите варианты<br>
+3. Оформим заказ
 </div>
 
-<div class="card">
+<div class="section">
 <h3>Быстрый запрос VIN</h3>
-<p>Нажмите — откроется Telegram</p>
-<button class="btn" id="fastVin">Открыть Telegram</button>
+<a class="btn" href="https://t.me/share/url?text=Здравствуйте! Нужен подбор запчастей." target="_blank">
+Открыть Telegram
+</a>
 </div>
 
-</section>
+<div class="footer">
+© DolgopAuto • 09:00–20:00 • 8 (977) 936-29-53
+</div>
 
-<footer class="footer">
-© DolgopAuto • Ежедневно 09:00–20:00 • 8 (977) 936-29-53
-</footer>
-
-</main>
-
-<script>
-document.getElementById("fastVin").addEventListener("click", () => {
-const text = [
-"Здравствуйте! Нужен подбор запчастей.",
-"",
-"VIN:",
-"Авто:",
-"Что нужно:",
-"Контакт:"
-].join("\n");
-
-const url = "https://t.me/share/url?text=" + encodeURIComponent(text);
-window.open(url, "_blank");
-});
-</script>
+</div>
 
 </body>
 </html>
