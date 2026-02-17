@@ -14,16 +14,22 @@
 }
 
 body{
-  height:100vh;
-  background:
-  linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.9)),
-  url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
-  background-size:cover;
-  background-position:center;
-  color:white;
+  min-height:100vh;
+  color:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
+
+  /* запасной фон, если картинка не загрузилась */
+  background: radial-gradient(1200px 600px at 20% 10%, #2b3a55 0%, #0b0f17 55%, #05070b 100%);
+
+  /* основная картинка поверх */
+  background-image:
+    linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.92)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container{
