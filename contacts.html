@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Контакты — DolgopAuto</title>
+  <meta name="description" content="Контакты DolgopAuto. Телефон, Telegram, MAX, VK. Заявка на подбор по VIN."/>
+  <link rel="stylesheet" href="style.css?v=1"/>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark"></span>
+      <span class="brand__text">
+        <span class="brand__name">DolgopAuto</span>
+        <span class="brand__sub">Подбор автозапчастей по VIN</span>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Главная</a>
+      <a class="nav__link" href="catalog.html">Каталог</a>
+      <a class="nav__link active" href="contacts.html">Контакты</a>
+      <a class="nav__cart" href="cart.html">Корзина: <b data-cart-count>0</b></a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card card--pad">
+    <h1 class="h2">Контакты</h1>
+    <div class="pills" style="margin-top:12px;">
+      <div class="pill">Телефон: <b><a href="tel:+79779362953">8 (977) 936-29-53</a></b></div>
+      <div class="pill">Почта: <b><a href="mailto:dolgopauto@mail.ru">dolgopauto@mail.ru</a></b></div>
+      <div class="pill">График: <b>ежедневно 09:00–20:00</b></div>
+    </div>
+
+    <div class="cta" style="margin-top:12px;">
+      <a class="btn btn--solid" href="tel:+79779362953">📞 Позвонить</a>
+      <a class="btn btn--primary" href="https://t.me/avantekru" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn btn--primary" href="https://max.ru/u/f9LHodD0cOKj3dtP8OrowftL4OglmMfxSO4WeATngrdyDcu9j8BsUteLcBk" target="_blank" rel="noopener">MAX</a>
+      <a class="btn btn--primary" href="https://m.vk.com/dolgopauto" target="_blank" rel="noopener">VK</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2 class="h3">Оставить заявку на подбор (VIN)</h2>
+
+    <div class="formGrid">
+      <input class="input" id="name" placeholder="Имя">
+      <input class="input" id="contact" placeholder="Контакт (+7… или @username Telegram)">
+    </div>
+
+    <div style="height:12px"></div>
+    <input class="input" id="topic" placeholder="Тема (например: подбор по VIN / ТО / масло)">
+
+    <div style="height:12px"></div>
+    <textarea class="input" id="message" placeholder="Сообщение (VIN / авто / детали)&#10;Например: VIN..., марка/модель/год/двигатель, что нужно"></textarea>
+
+    <div class="cta" style="margin-top:12px;">
+      <button class="btn btn--solid" type="button" id="send_tg">Отправить в Telegram</button>
+      <button class="btn btn--primary" type="button" id="send_mail">Отправить на почту</button>
+      <a class="btn btn--ghost" href="catalog.html">Перейти в каталог</a>
+    </div>
+
+    <div class="notice" style="margin-top:12px;">
+      Отправка работает без сервера: откроется Telegram / почтовый клиент (подходит для GitHub Pages).
+    </div>
+  </section>
+
+  <footer class="footer">
+    © DolgopAuto • Ежедневно 09:00–20:00 • 8 (977) 936-29-53
+  </footer>
+</main>
+
+<script src="products.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
