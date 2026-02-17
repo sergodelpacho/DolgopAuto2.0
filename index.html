@@ -1,37 +1,79 @@
-<b>Оригинал и аналоги</b>
-        <div class="muted" style="margin-top:8px;">Подбираем под бюджет и сроки.</div>
-      </div>
-      <div class="card card--pad">
-        <b>Быстро в рабочее время</b>
-        <div class="muted" style="margin-top:8px;">Ежедневно 09:00–20:00.</div>
-      </div>
-      <div class="card card--pad">
-        <b>Удобная связь</b>
-        <div class="muted" style="margin-top:8px;">Telegram / MAX / VK или звонок.</div>
-      </div>
-    </div>
-  </section>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DolgopAuto</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-  <footer class="footer">
-    © DolgopAuto • Ежедневно 09:00–20:00 • 8 (977) 936-29-53 • <a href="mailto:dolgopauto@mail.ru">dolgopauto@mail.ru</a>
-  </footer>
+<body>
+
+<main class="container">
+
+<section class="hero">
+<h1>DolgopAuto</h1>
+<p>Автозапчасти под заказ и в наличии</p>
+
+<div class="buttons">
+<a class="btn" href="https://max.ru/u/f9LHodD0cOKj3dtP8OrowftL4OglmMfxSO4WeATngrdyDcu9j8BsUteLcBk" target="_blank">MAX</a>
+<a class="btn" href="https://m.vk.com/dolgopauto" target="_blank">VK</a>
+<a class="btn" href="tel:+79779362953">Позвонить</a>
+</div>
+
+<p class="meta">
+Ежедневно 09:00–20:00<br>
+8 (977) 936-29-53
+</p>
+</section>
+
+<section class="grid">
+
+<div class="card">
+<h3>Каталог</h3>
+<p>ТО, масла, подвеска, электрика и аксессуары</p>
+<a class="btn" href="каталог.html">Перейти в каталог</a>
+</div>
+
+<div class="card">
+<h3>Как заказать</h3>
+<ol>
+<li>Напишите VIN / параметры</li>
+<li>Получите варианты</li>
+<li>Оформим заказ</li>
+</ol>
+<a class="btn ghost" href="контакты.html">Оставить заявку</a>
+</div>
+
+<div class="card">
+<h3>Быстрый запрос VIN</h3>
+<p>Нажмите — откроется Telegram</p>
+<button class="btn" id="fastVin">Открыть Telegram</button>
+</div>
+
+</section>
+
+<footer class="footer">
+© DolgopAuto • Ежедневно 09:00–20:00 • 8 (977) 936-29-53
+</footer>
+
 </main>
 
-<script src="products.js?v=1"></script>
-<script src="app.js?v=1"></script>
 <script>
-  document.getElementById("fastVin")?.addEventListener("click", () => {
-    const text = [
-      "Здравствуйте! Нужен подбор запчастей.",
-      "",
-      "VIN:",
-      "Авто (марка/модель/год/двигатель):",
-      "Что нужно:",
-      "Контакт для связи:"
-    ].join("\n");
-    const url = "https://t.me/share/url?text=" + encodeURIComponent(text);
-    window.open(url, "_blank");
-  });
+document.getElementById("fastVin").addEventListener("click", () => {
+const text = [
+"Здравствуйте! Нужен подбор запчастей.",
+"",
+"VIN:",
+"Авто:",
+"Что нужно:",
+"Контакт:"
+].join("\n");
+
+const url = "https://t.me/share/url?text=" + encodeURIComponent(text);
+window.open(url, "_blank");
+});
 </script>
+
 </body>
 </html>
