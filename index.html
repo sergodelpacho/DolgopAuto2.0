@@ -1,0 +1,37 @@
+<b>Оригинал и аналоги</b>
+        <div class="muted" style="margin-top:8px;">Подбираем под бюджет и сроки.</div>
+      </div>
+      <div class="card card--pad">
+        <b>Быстро в рабочее время</b>
+        <div class="muted" style="margin-top:8px;">Ежедневно 09:00–20:00.</div>
+      </div>
+      <div class="card card--pad">
+        <b>Удобная связь</b>
+        <div class="muted" style="margin-top:8px;">Telegram / MAX / VK или звонок.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © DolgopAuto • Ежедневно 09:00–20:00 • 8 (977) 936-29-53 • <a href="mailto:dolgopauto@mail.ru">dolgopauto@mail.ru</a>
+  </footer>
+</main>
+
+<script src="products.js?v=1"></script>
+<script src="app.js?v=1"></script>
+<script>
+  document.getElementById("fastVin")?.addEventListener("click", () => {
+    const text = [
+      "Здравствуйте! Нужен подбор запчастей.",
+      "",
+      "VIN:",
+      "Авто (марка/модель/год/двигатель):",
+      "Что нужно:",
+      "Контакт для связи:"
+    ].join("\n");
+    const url = "https://t.me/share/url?text=" + encodeURIComponent(text);
+    window.open(url, "_blank");
+  });
+</script>
+</body>
+</html>
